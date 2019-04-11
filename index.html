@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>Trivia Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/gif" href="http://static.libsyn.com/p/assets/a/5/f/1/a5f16eeddad8aea6/Stuff-I-Never-Knew-Logo-itunes-2018.jpg"/>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+  </head>
+
+  <body>
+  
+    <audio controls loop>
+      <source src="./assets/song/rocky_balboa_the_best_of_rocky_-_ost__rokki_balboa_-_saudtrek_2006_-_survivor_-_eye_of_the_tiger_(zf.fm).mp3" type="audio/mp3"/>
+      <audio src="./assets/song/rocky_balboa_the_best_of_rocky_-_ost__rokki_balboa_-_saudtrek_2006_-_survivor_-_eye_of_the_tiger_(zf.fm).mp3" type="audio/mp3" id="song1" volume="0.1" style="display: none;"></audio>
+      <audio src="./assets/song/eminem_-_venom_stopmusic.net.mp3" type="audio/mp3" id="song2" volume="0.1" style="display: none;"></audio>
+      <audio src="./assets/song/rocky_balboa_the_best_of_rocky_-_ost__rokki_balboa_-_saudtrek_2006_-_survivor_-_eye_of_the_tiger_(zf.fm).mp3" type="audio/mp3" id="song3" volume="0.1" style="display: none;"></audio>
+      <script>
+        for(var i = 1; i <= 3; i++)
+{
+    document.querySelector("#song" + i)[0].play();
+}
+      </script>
+    
+    </audio>
+   
+    <div class="container">
+      <div class="header text-center clearfix">
+        <h1 class="text-muted">Sports trivia game</h1>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <div id="game">
+          <h2>SPORTS Trivia Game</h2>
+          <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+          <p id="question" class="lead"></p>
+        </div>
+        <div id="results">
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="choices" class="text-center">
+          <button id="start" class="btn btn-info btn-lg">Start Game</button>
+          <div id="options">
+            
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./assets/js/game.js"></script>  
+
+
+  </body>
+</html>
