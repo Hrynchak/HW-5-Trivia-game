@@ -1,0 +1,15 @@
+body{
+	background-image: url(https://www.gametimect.com/wp-content/themes/gum-genesis-gct/images/ft-img-placeholder_large.jpg);
+	text-align: center;
+}
+
+.text-muted{
+	font-family: 'VT323', monospace;
+	color: black;
+}
+.last-seconds{
+  color: red;
+}
+.option{
+  margin: 15px;
+}
